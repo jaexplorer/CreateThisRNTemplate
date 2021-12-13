@@ -12,6 +12,7 @@ import * as Sentry from '@sentry/react-native';
 import { logScreen, setupAnalytics } from './src/analytics/Analytics';
 import { linking } from './src/Deeplinking';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import RNBootSplash from 'react-native-bootsplash';
 
 interface AppProps {}
 
@@ -39,6 +40,7 @@ const App: FC<AppProps> = ({}) => {
       }}
       onReady={() => {
         routingInstrumentation.registerNavigationContainer(navigationRef);
+        RNBootSplash.hide({ fade: true });
       }}
     >
       <GestureHandlerRootView style={{ flex: 1 }}>

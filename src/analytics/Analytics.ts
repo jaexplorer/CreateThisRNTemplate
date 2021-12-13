@@ -1,5 +1,4 @@
 import analytics from '@react-native-firebase/analytics';
-import LogRocket from '@logrocket/react-native';
 import * as Sentry from '@sentry/react-native';
 import crashlytics from '@react-native-firebase/crashlytics';
 import { EventName, EventValues } from './AnalyticsConstants';
@@ -9,8 +8,6 @@ export const logEvent = async (name: EventName, values: EventValues = {}) => {
   await analytics().logEvent(name, values);
   crashlytics().log(name);
   Sentry.setContext(name, values);
-  // Not supported yet
-  // LogRocket.track(name, values);
 };
 
 export const logScreen = async (name: string) => {
@@ -18,11 +15,6 @@ export const logScreen = async (name: string) => {
     screen_name: name,
     screen_class: name,
   });
-  // Not supported yet
-  // LogRocket.track('screen_changed', {
-  //   screen_name: name,
-  //   screen_class: name,
-  // });
   Sentry.setContext('screen_changed', {
     screen_name: name,
   });
@@ -40,7 +32,6 @@ export const logError = (error: any, ...optionalParams: any[]) => {
 };
 
 export const setupAnalytics = (routingInstrumentation: Sentry.ReactNavigationInstrumentation) => {
-  LogRocket.init(Config.LOGROCKET);
   Sentry.init({
     dsn: Config.SENTRY_DNS,
     debug: true,

@@ -2,7 +2,6 @@
 import FirebaseAuth, { FirebaseAuthTypes } from '@react-native-firebase/auth';
 import { getItem, setItem, StorageKey } from './Storage';
 import crashlytics from '@react-native-firebase/crashlytics';
-import LogRocket from '@logrocket/react-native';
 import * as Sentry from '@sentry/react-native';
 import { logError, logEvent } from './analytics/Analytics';
 import { EventName } from './analytics/AnalyticsConstants';
@@ -32,7 +31,6 @@ const setToken = async (
     crashlytics().setAttributes(userDetails),
   ]);
 
-  LogRocket.identify(credential.user.uid, userDetails);
   Sentry.setUser({ id, ...userDetails });
 
   const newToken = await credential.user.getIdToken(force);
