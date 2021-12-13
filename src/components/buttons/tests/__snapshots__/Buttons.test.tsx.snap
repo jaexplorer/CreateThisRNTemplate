@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Does Button render test 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <
+      activeOpacity={0.2}
+      style={
+        Array [
+          Object {
+            "opacity": 1,
+          },
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#4D4D4D",
+              "borderColor": "#999999",
+              "borderRadius": 100,
+              "borderWidth": 0,
+              "justifyContent": "center",
+              "minWidth": 128.57142857142856,
+              "padding": 10.714285714285714,
+            },
+            Object {},
+          ],
+        ]
+      }
+    >
+      <Text
+        maxFontSizeMultiplier={1}
+        style={
+          Array [
+            Object {
+              "bottom": -5,
+              "color": "#333333",
+              "fontSize": 15.714285714285714,
+              "marginBottom": 0,
+              "textAlign": "center",
+              "textAlignVertical": "center",
+            },
+            Array [
+              Object {
+                "color": "#333333",
+                "fontFamily": "",
+                "fontSize": 15.714285714285714,
+                "paddingLeft": 21.428571428571427,
+                "paddingRight": 21.428571428571427,
+              },
+              Object {},
+            ],
+          ]
+        }
+      >
+        Test
+      </Text>
+    </>
+  </View>
+</View>
+`;
+
+exports[`Does ButtonRoot render test 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <
+      activeOpacity={0.2}
+      style={
+        Array [
+          Object {
+            "opacity": 1,
+          },
+          Object {},
+        ]
+      }
+    >
+      <View />
+    </>
+  </View>
+</View>
+`;
