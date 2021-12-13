@@ -1607,7 +1607,7 @@ ReactTestInstance {
           "effects": null,
           "firstBaseUpdate": Object {
             "callback": null,
-            "eventTime": 238,
+            "eventTime": 82,
             "lane": 1,
             "next": null,
             "payload": Object {
@@ -1617,7 +1617,7 @@ ReactTestInstance {
           },
           "lastBaseUpdate": Object {
             "callback": null,
-            "eventTime": 238,
+            "eventTime": 82,
             "lane": 1,
             "next": null,
             "payload": Object {
