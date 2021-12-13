@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
-import Home from './Home';
+import Home from '../Home';
 
 test('renders home', () => {
   const { container } = render(<Home />);
