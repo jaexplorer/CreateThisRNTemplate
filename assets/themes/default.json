@@ -1,0 +1,35 @@
+[
+  {
+    "key": "default",
+    "colours": {
+      "backgroundColours": {
+        "primary": "#F5F5F5",
+        "secondary": "#ECEEF0"
+      },
+      "textColours": {
+        "primary": "#333333",
+        "secondary": "#999999",
+        "tertiary": "#E6E6E6"
+      },
+      "buttonColours": {
+        "primary": "#4D4D4D",
+        "border": "#999999"
+      }
+    },
+    "padding": 4,
+    "borderRadius": 20,
+    "fontSize": {
+      "xsm": "1rem",
+      "sm": "1.2rem",
+      "m": "1.6rem",
+      "l": "2rem",
+      "xl": "2.4rem",
+      "xxl": "3.2rem",
+      "xxxl": "4.6rem"
+    },
+    "font": {
+      "regular": "",
+      "bold": ""
+    }
+  }
+]
